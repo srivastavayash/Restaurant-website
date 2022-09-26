@@ -1,0 +1,246 @@
+/*css reset*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(184, 172, 172);
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* css variable */
+/* navigation bar */
+#navbar::before {
+    content: "";
+    background-color: rgb(214, 57, 57);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar {
+    display: flex;
+    position: sticky;
+    top: 0px;
+    align-items: center;
+    font-family: 'Bree Serif', serif;
+}
+
+/* Navigation bar: logo and image */
+#logo {
+    margin: 14px 0px;
+}
+
+#logo img {
+    height: 83px;
+    margin: -8px 11px;
+}
+
+/* Navigation bar: List Styling */
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: rgb(65, 18, 18);
+    background-color: white;
+}
+
+/* Home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 526px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Home section */
+#home::before {
+    content: "";
+    background: url(../bg.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 642px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1 {
+    color: rgba(252, 252, 252, 0.938);
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p {
+    color: rgb(197, 187, 187);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* Services Section */
+#services {
+    margin: 0px;
+    padding: 1px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid rgb(71, 2, 2);
+    padding: 12px;
+    margin: 3px 4px;
+    border-radius: 24px;
+    background-color: rgba(54, 8, 11, 0.938);
+    margin-bottom: 20px;
+}
+
+#services .box img {
+    height: 168px;
+    display: block;
+    margin: auto;
+}
+
+#services .box p {
+    font-family: 'Bree Serif', serif;
+}
+
+/* client-section */
+#client-section {
+    position: inline relative;
+}
+
+#client-section::before {
+    content: "";    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item {
+    padding: 34px;
+}
+
+#clients img {
+    height: 139px;
+}
+
+/* contact-section */
+#contact {
+    position:inline relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 670px;
+    z-index: -1;
+    background: url(..//cont3.png);
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form {
+    width: 400px;
+}
+
+#contact-box form label {
+    font-size: 1.3rem;
+    color: rgb(197, 187, 187);
+    font-family: 'Bree Serif', serif;
+}
+
+/* footer-section */
+footer {
+    background-color: rgba(54, 8, 11, 0.938);
+    color: white;
+    padding: 12px 20px;
+}
+
+/* utility class */
+.primary {
+    font-size: 2.8rem;
+    padding: 20px;
+    font-family: 'Bree Serif', serif;
+}
+
+.secondary {
+    font-size: 2.0rem;
+    padding: 12px;
+    color: white;
+    font-family: 'Bree Serif', serif;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 1px solid black;
+    background-color: rgb(219, 97, 103);
+    color: rgb(228, 228, 228);
+    margin: 17px;
+    font-size: 1rem;
+    border-radius: 13px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.butn {
+    padding: 6px 13px;
+    border: 1px solid black;
+    color: black;
+    margin: 17px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 9px;
+    font-family: 'Bree Serif', serif;
+}
+
+.center {
+    text-align: center;
+}
+
+.centeri {
+    text-align: center;
+    color: rgb(199, 196, 196);
+}
